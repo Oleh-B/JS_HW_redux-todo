@@ -1,0 +1,208 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #000; }
+
+div, menu, p, a, span, em, strong, img, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, td, tr, form, fieldset, legend, label, select, input, textarea, button {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  list-style: none; }
+
+button {
+  cursor: pointer;
+  padding: 0; }
+
+textarea {
+  vertical-align: top; }
+
+input[type=submit] {
+  cursor: pointer; }
+
+img, fieldset {
+  border: 0; }
+
+img {
+  vertical-align: top; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a:hover {
+  text-decoration: none; }
+
+button:focus {
+  outline: none; }
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #fff; }
+
+a:focus, a:hover {
+  color: #2098D1;
+  text-decoration: none; }
+
+ol {
+  list-style-type: decimal; }
+
+img {
+  width: 100%;
+  display: block;
+  height: auto; }
+
+  /*-------------------------------------------*/
+  button {
+    background: 0 0;
+    border: none;
+    border-radius: 2px;
+    color: #757575;
+    position: relative;
+    height: 36px;
+    margin: 0;
+    min-width: 64px;
+    padding: 0 16px;
+    display: inline-block;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    overflow: hidden;
+    will-change: box-shadow;
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1);
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+  }
+  
+  button.delete {
+    background: rgb(46, 69, 199);
+    color:#fff;
+    transition: .3s all linear;
+  }
+  button.add {
+    background: rgb(127, 72, 216);
+    color:#fff;
+    transition: .3s all linear;
+    margin-left: 10px;
+    margin-right:5px;
+  }
+  button.edit {
+    background: rgb(76, 196, 166);
+    color:#fff;
+    transition: .3s all linear;
+    margin-left: 10px;
+    margin-right:5px;
+  }
+  button.edit:hover {
+    background:#f06934;
+  }
+  button.save {
+    background: rgb(46, 199, 59);
+    color:#fff;
+    transition: .3s all linear;
+    margin-left: 10px;
+    margin-right:5px;
+  }
+  button.save:hover {
+    background:#f06934;
+  }
+  button.add:hover {
+    background:#f06934;
+  }
+  button.delete:hover {
+    background:#f06934;
+  }
+  .App {
+    text-align: center;
+  }
+  .App-header {
+    background-color: rgba(10, 28, 29, 0.822);
+    color:#fff;
+    padding:1.5rem 0;
+    text-transform: uppercase;
+  }
+  main {
+    background: #fff;
+    width: 80%;
+    margin: 70px auto;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .todo {
+    display: flex;
+    font-size: 1rem;
+    border-top: 2px solid rgba(0,0,0,.1);
+    background-color: #cad1e6;
+    transition: all .2s;
+    -webkit-user-select: none;
+    user-select: none;
+    padding: 1em;
+    align-items: center;
+  }
+  
+  .todo .todo-title {
+    margin-right: auto;
+  }
+  .done {
+    text-decoration: line-through;
+  }
+  .todo-form {
+    display: flex;
+    background-color: #fafafa;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    padding: 10px;
+  }
+  
+  .todo-form input {
+    flex: 1;
+    outline: none;
+    font-size:18px;
+    padding:5px 0 5px 10px;
+  }
+  .todo-form input:focus {
+    border:2px solid rgb(88, 170, 236)
+  }
+.todo-edit-form {
+    display: flex;
+    font-size: 1rem;
+    border-top: 2px solid rgba(0,0,0,.1);
+    background-color: #cad1e6;
+    transition: all .2s;
+    -webkit-user-select: none;
+    user-select: none;
+    align-items: center;
+    padding:1em
+  }
+  
+  .todo-edit-form input {
+    flex: 1;
+    font-size: 1rem;
+    padding: 1rem;
+    background: transparent;
+    padding:.5em;
+    border:1px solid rgb(151, 145, 145);
+  }
+  
